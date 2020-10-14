@@ -1,0 +1,83 @@
+<!-- Inicio de la estructura de la pagina -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+
+	<!-- evitar que se deforme en dispositivos moviles -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+	<!-- aplicando el estilo -->
+	<link rel="stylesheet" href="css/estilo.css">
+	
+	<title> Registrate </title>
+</head>
+<body style="background: url('img/fondo.png')  no-repeat center center fixed; background-size: cover;" >
+
+	<!-- Inicio formulario -->
+	<form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?>" method="post" class="formulario" >
+
+		<!-- Title -->
+		<h1 class="titulo">Ingresa Tus Datos</h1>  
+
+		<!-- Usser Name  -->
+		<label for="name" class="formulario_label">
+			Ingresa tu Nombre
+			<input type="text" name="name" id="name" class="formulario_input" placeholder="Nombre" maxlength="10" min="10">
+		</label>
+
+		<!-- last name Usser -->
+	    <label for="apellido" class="formulario_label">
+	    	Ingresa tu Apellido
+			<input type="text" id="apellido" name="apellido" class="formulario_input" placeholder="Nombre" maxlength="15">
+		</label>
+
+		<!-- Email Usser -->
+		 <label for="email" class="formulario_label">
+	    	Ingresa tu Correo electronico
+			<input type="text" id="email" name="email" class="formulario_input" placeholder="Example@Dominio" maxlength="99">
+		</label>
+        
+        <!-- validacion del correo -->
+         <label for="email_validate" class="formulario_label">
+	    	Vuelve a ingresar tu correo
+	    	<input  type="email" id="email_validate" name="email_validate" class="formulario_input" placeholder="Example@Dominio"  maxlength="99"></input>
+		</label>
+
+
+		<!-- password  -->
+		<label for="pass" class="formulario_label">
+			Ingresa una Contraseña 
+			<input type="password" name="pass" id="pass" class="formulario_input" placeholder="Contraseña" maxlength="10" min="10">
+		</label>
+
+		<!-- Boton -->
+		<input type="submit" class="formulario_submit" name="enviar" id="enviar" value="Registra Cuenta">
+
+
+          <?php
+
+          echo "<div class='result'>";
+          /*Si el usuario presiona le boton 'enviar'*/
+        if (isset($_POST['enviar']) == true) {
+
+        	// recojemos los datos dentro de las variables
+        	$name = $_POST['name'];
+        	$lastname = $_POST['apellido'];
+        	$email = $_POST['email'];
+        	$email_validate = $_POST['email_validate'];
+        	$pass = $_POST['pass'];
+
+
+          
+               //incluimos la lineas del codigo de envio.php
+		      include("envio.php");
+		  
+        }
+        echo "</div>";
+		?>
+
+	</form>
+
+</body>
+</html>
