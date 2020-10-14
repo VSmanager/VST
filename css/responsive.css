@@ -1,0 +1,79 @@
+@media screen and (max-width:900px){
+    header {
+        background-position: center;
+    }
+
+    .contenido-sobre-nosotros{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .sobre-nosotros .contenido-textos{
+        width: 90%;
+    }
+    .imagen-about-us{
+        width: 90%;
+    }
+   .servicio-cont{
+        justify-content: center;
+        flex-direction: column;
+   }
+   .servicio-ind{
+       width: 100%;
+       text-align: center;
+   }
+   .servicio-ind:nth-child(1), .servicio-ind:nth-child(2){
+       margin-bottom: 60px;
+   }
+
+   .servicio-ind img{
+       width: 90%;
+   }
+   .fondo:hover{
+       background-position: center;
+   }
+   .menu{
+    widows: 20%;
+   }
+}
+
+.social {
+    position: fixed;
+    left: 35;
+    top: 275px;
+    z-index:2000;
+}
+
+.social ul{
+    list-style:none;
+}
+
+.social ul li a{
+    display:inline-block;
+    color: #fff;
+    background: grey;
+    padding:10px 15px;
+    text-decoration:none;
+    -webkit-transition:all 800ms ease;
+    -o-transition:all 800ms ease;
+    transition:all 800ms ease;
+}
+
+.social ul li .icon-facebook {background:#3b5998;}
+.social ul li .icon-twitter {background:#00abf0;}
+.social ul li .icon-instagram {background:#d95232;}
+
+.social ul li .icon-facebook:hover{
+    padding: 10px 30px;
+    background: #002478 ;
+}
+
+.social ul li .icon-twitter:hover{
+    padding: 10px 30px;
+    background: #0AF5EB ;
+}
+
+.social ul li .icon-instagram:hover{
+    padding: 10px 30px;
+    background: #F53A03  ;
+}

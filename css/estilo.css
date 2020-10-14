@@ -1,0 +1,157 @@
+*{
+	box-sizing: border-box;
+}
+
+
+body{
+   
+	color: white;
+	font-family: sans-serif;
+}
+
+.formulario_label{
+	text-align: left;
+	color: black;
+	margin-left: 30px;
+	margin-top: 80px;
+	margin-bottom: 67px;
+	font-size: 1.20em;
+}
+
+.formulario{
+	
+	display: block;
+    background: white;
+	width: 677px;
+	margin-top: 90px;
+	padding-top: auto;
+	padding-right: 10px;
+	padding-left:10px; 
+	padding-bottom: auto;margin-bottom: 24px;
+	margin-left: 370px;
+	margin-right:370px;
+	height: 599px;
+	box-shadow: 0 0 20px 1px #cccccc;
+	border: 1.5px solid #ffcc00;
+	border-radius: 20px;
+
+	
+}
+
+
+.titulo{
+	text-align: center;
+	
+	color: black;
+}
+
+
+
+.formulario_input{
+	   display: block;
+	   background: #ccccff;
+       border: 1px solid rgba(0,0,0,0.3);
+       width: 520px;
+       height: 37px;
+       padding: 10px;
+       margin-left: 77px;
+       padding-top: 10px;
+       margin-top: 10px;
+       font-size: 16px;
+       border-radius: 20px;
+       margin-bottom: 10px;
+}
+
+
+.formulario_input:focus{
+	
+	border-radius: 1.3px solid blue;
+	 
+}
+
+
+
+.formulario_submit{
+	display: block;
+	background-color: #48e;
+	color: #fff;
+	width: calc(70% - 70px);
+	margin-left: 35px;
+	cursor: pointer;
+	border-radius: 20px;
+	height: 40px;
+	margin-left: 131px;
+	margin-top: 17px;
+
+
+}
+
+
+.formulario_submit:focus{
+	
+	display: block;
+	background-color: black
+	color #ffffff;
+	width: calc(70% - 70px);
+	margin-left: 35px;
+	cursor: pointer;
+	border-radius: 20px;
+	height: 40px;
+	margin-left: 131px;
+	margin-top: 17px;
+
+}
+
+
+
+.result{
+	
+    height: 100%;
+	margin-top: -2px;
+	margin-left: 20px;
+	color: black;
+	font-size: 1.2em;
+}
+
+
+
+.social {
+    position: fixed;
+    left: 35;
+    top: 275px;
+    z-index:2000;
+}
+
+.social ul{
+    list-style:none;
+}
+
+.social ul li a{
+    display:inline-block;
+    color: #fff;
+    background: grey;
+    padding:10px 15px;
+    text-decoration:none;
+    -webkit-transition:all 800ms ease;
+    -o-transition:all 800ms ease;
+    transition:all 800ms ease;
+}
+
+.social ul li .icon-facebook {background:#3b5998;}
+.social ul li .icon-twitter {background:#00abf0;}
+.social ul li .icon-instagram {background:#d95232;}
+
+.social ul li .icon-facebook:hover{
+    padding: 10px 30px;
+    background: #002478 ;
+}
+
+.social ul li .icon-twitter:hover{
+    padding: 10px 30px;
+    background: #0AF5EB ;
+}
+
+.social ul li .icon-instagram:hover{
+    padding: 10px 30px;
+    background: #F53A03  ;
+}

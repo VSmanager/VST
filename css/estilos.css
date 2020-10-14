@@ -1,0 +1,355 @@
+* {
+  list-style: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0b0b0b;
+  display: block;
+  margin-top: -21px;
+  margin-left: 0px;
+  margin-right: 0px;
+  width: relative;
+  height: relative;
+  color: #f8f8ff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+}
+body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+body::-webkit-scrollbar-track {
+  background: black;
+}
+body::-webkit-scrollbar-thumb {
+  background: #e9472b;
+}
+
+
+.titulo {
+  color: #e9472b;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+/* Nav */
+
+.textos-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+}
+
+.textos-header img{
+  padding-bottom: 12px;
+}
+
+.nav li, a{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.nav li{
+  display: inline-block;
+  padding: 0px 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav li a{
+  transition: all 0.3s ease 0s;
+}
+
+.nav li a:hover{
+  color:#e9472b;
+}
+
+.link::after{
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #e9472b;
+  transition: width .3s;
+}
+
+.link:hover::after{
+  width: 100%;
+  transition: width .3s;
+}
+
+/* Desarrolladores */
+
+.clientes{
+  background-color: rgb(39, 38, 38);
+  padding: 60px 0;
+  margin: auto;
+  overflow: hidden;
+}
+.cards {
+  display: flex;
+  width: auto;
+  text-align: center;
+  justify-content: center;
+  padding: 40px;
+  border-color: white;
+  
+}
+
+.card:hover{
+  transform: translateY(-3%);
+  transition: all 400ms ease;
+}
+
+.cards .card {
+ 
+  background: #e9472b;
+  margin: 5px;
+  margin-bottom: 50px;
+  width: 300px;
+  padding: 20px;
+  line-height: 20px;
+  position: relative;
+  justify-content: space-evenly;
+  display: flex;
+  align-items: center;
+  height: 200px;
+  font-size: 14px;
+  border-style: solid;
+  border-radius: 15px;
+  border-width: 3px;
+  transition: all 400ms ease;
+ 
+}
+
+.cards .card img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  
+}
+
+.cards .card > .contenido-texto-card {
+  width: 70%;
+  color: #fff;
+}
+
+.cards .card > .contenido-texto-card p {
+  font-weight: 200;
+  padding-top: 5px;
+}
+
+
+.contenedor {
+  padding: 60px 0;
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+} 
+
+/* Fondo */
+
+.fondo {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background: url(img/visualtechno.png);
+  margin: 0px;
+  transition: background 0.5s ease-in;
+  -webkit-transition: background 0.5s ease-in;
+}
+
+.fondo:hover {
+  position: relative;
+  width: 100%;
+  background: url(img/visualtechno.gif);
+}
+
+section .wave {
+  position: absolute;
+  width: 100%;
+  height: 150px;
+  bottom: 0;
+  left: 0;
+  background: url(img/city.png);
+  animation: animate 50s linear infinite;
+}
+@keyframes animate {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: 1000px;
+  }
+}
+
+section .waved {
+  position: absolute;
+  width: 100%;
+  height: 150px;
+  bottom: 0;
+  left: 0;
+  background: url(img/city2.png);
+  animation: animated 180s linear infinite;
+}
+@keyframes animated {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: 1920px;
+  }
+}  
+
+/* Nuestros servicios */ 
+
+.noticias p{
+  padding: 14px;
+  line-height: 1.5;
+}
+.actualizaciones p{
+  padding: 14px;
+  line-height: 1.5;
+}
+.juegos p{
+  padding: 14px;
+  line-height: 1.5;
+}
+.contenedor img{
+  padding: 20px;
+}
+
+/* Footer */ 
+
+footer {
+  background: rgb(51, 51, 51);
+  padding: 60px 0 30px 0;
+  margin: auto;
+  overflow: hidden;
+}  
+
+.contenedor-footer {
+  display: flex;
+  width: 90%;
+  justify-content: space-evenly;
+  margin: auto;
+  padding-bottom: 50px;
+  border-bottom: 1px solid rgb(116, 114, 114);
+  background: #333333;
+}  
+
+.content-foo {
+  text-align: center;
+}  
+
+.content-foo h4 {
+  color: #fff;
+  border-bottom: 3px solid #e25959;
+  padding-bottom: 5px;
+  background: #333333;
+}  
+.content-foo p {
+  color: #ccc;
+  background: #333333;
+}  
+
+.titulo-final {
+  text-align: center;
+  font-size: 24px;
+  margin: 20px 0 0 0;
+  color: #bdbdbd;
+  background: #333333;
+}  
+
+.social {
+    position: fixed;
+    left: 35;
+    top: 275px;
+    z-index:2000;
+}
+
+.social ul{
+    list-style:none;
+}
+
+.social ul li a{
+    display:inline-block;
+    color: #fff;
+    background: grey;
+    padding:10px 15px;
+    text-decoration:none;
+    -webkit-transition:all 800ms ease;
+    -o-transition:all 800ms ease;
+    transition:all 800ms ease;
+}
+
+.social ul li .icon-facebook {background:#3b5998;}
+.social ul li .icon-twitter {background:#00abf0;}
+.social ul li .icon-instagram {background:#d95232;}
+
+.social ul li .icon-facebook:hover{
+    padding: 10px 30px;
+    background: #002478 ;
+}
+
+.social ul li .icon-twitter:hover{
+    padding: 10px 30px;
+    background: #0AF5EB ;
+}
+
+.social ul li .icon-instagram:hover{
+    padding: 10px 30px;
+    background: #F53A03  ;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?rp1lj8');
+  src:  url('fonts/icomoon.eot?rp1lj8#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?rp1lj8') format('truetype'),
+    url('fonts/icomoon.woff?rp1lj8') format('woff'),
+    url('fonts/icomoon.svg?rp1lj8#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook:before {
+  content: "\ea90";
+}
+.icon-instagram:before {
+  content: "\ea92";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
